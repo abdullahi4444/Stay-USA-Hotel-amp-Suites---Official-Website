@@ -1,0 +1,90 @@
+#drawer {
+    display: none;
+}
+nav li {
+    float: left;
+}
+@media screen and (max-width: 800px) {
+    #drawer {
+        display: inline-block;
+        margin-left: -60px;
+        margin-top: 10px;
+        /* margin-bottom: -71px; */
+    }
+    .logopic{
+        height: 50px;
+        margin-top: -10px;
+    }
+    .content{
+        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 30px;
+        margin-left: 30px;
+    }
+    header nav {
+        display: none;
+        float: none;
+        padding-top: 0; /* Hamburger icon is in the header on the right side, and nav expands vertically in the center of the screen below the hamburger icon, that's why I put the padding 120px, to make nav below the icon*/
+        text-align: left;
+        width: 80%;
+        margin: auto;
+        margin-left: 30px;
+        background-color: white;
+        line-height: 30px;
+    }
+    nav ul{
+        list-style-type: none;
+    }
+    nav li {
+        float: none;
+    }  
+    nav li a {
+        display: inline-block;
+        font-size: 20px;
+        margin-left: -200px;
+        margin-top: 10px;
+    }
+}
+.display {
+    display: block;
+}
+@media screen and (min-width:800px) and (max-width: 1040px) 
+{
+    #drawer {
+        display: inline-block;
+        margin-bottom: -70px;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .content{
+        margin-left: 70px;
+        height: 40px;
+    }
+    header nav {
+        display: none;
+        float: none;
+        padding-top: 0; /* Hamburger icon is in the header on the right side, and nav expands vertically in the center of the screen below the hamburger icon, that's why I put the padding 120px, to make nav below the icon*/
+        text-align: left;
+        width: 80%;
+        margin: auto;
+        margin-left: 10px;
+        background-color: white;
+        line-height: 30px;
+    }
+    nav ul{
+        list-style-type: none;
+    }
+    nav li {
+        float: none;
+        font-size: 20px;
+    }  
+    nav li a {
+        display: inline-block;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+.display {
+    display: block;
+}

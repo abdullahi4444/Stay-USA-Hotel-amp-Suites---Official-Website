@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <style>
+            #drawer {
+                display: none;
+            }
+            nav li {
+                float: left;
+            }
+            @media screen and (max-width: 768px) {
+                #drawer {
+                    display: inline-block;
+                    margin-left: 425px;
+                    margin-bottom: -20px;
+                }
+                header nav {
+                    display: none;
+                    float: none;
+                    padding-top: 0; /* Hamburger icon is in the header on the right side, and nav expands vertically in the center of the screen below the hamburger icon, that's why I put the padding 120px, to make nav below the icon*/
+                    text-align: center;
+                }
+                nav ul{
+                    list-style-type: none;
+                }
+                nav li {
+                    float: none;
+                    margin-left: 380px;
+                }  
+                nav li a {
+                    display: inline-block;
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
+            }
+            .display {
+                display: block;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+    <img id="drawer" src="../All Images/humburger.jpg" alt="Drawer" width="12%">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+        </ul>
+    </nav>
+    </header>
+    <script>
+        $('#drawer').click(function() {
+            $('header nav').toggleClass('display');
+
+            if( $(this).text() == 'Hide' ) {
+
+                $(this).text('Show');
+
+            } else {
+                $(this).text('Hide');
+
+            }
+        });
+    </script>
+</body>
+</html>
